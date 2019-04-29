@@ -1,0 +1,17 @@
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid black;
+}
+
+#bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top:10px;
+}
+
+i{
+  margin:5px;
+}

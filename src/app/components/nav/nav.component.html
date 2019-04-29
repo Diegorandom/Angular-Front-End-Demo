@@ -1,0 +1,58 @@
+<div class="p-grid p-justify-end" id="nav">
+  <div class="p-col-1" >
+    <button pButton type="button" label="Solidarity" class="ui-button-secondary" icon="pi pi-fw pi-plus" ></button>
+  </div>
+  <div class="p-col-1 p-offset-7">
+    <button type="text" pButton label="Dashboard" class="ui-button-secondary"></button>
+  </div>
+  <div class="p-col-1">
+    <button type="text" pButton label="Community" class="ui-button-secondary"></button>
+  </div>
+  <div class="p-col-1" style="width:50px">
+    <button type="text" pButton icon="pi pi-fw pi-bell" class="ui-button-secondary"></button>
+  </div>
+  <div class="p-col-1" style="width:50px">
+    <p-overlayPanel #op>
+      <div class="p-grid">
+        <div class="p-col">
+          <i class="pi pi-plus-circle" style="font-size: 4em"></i>
+        </div>
+        <div class="p-col">
+          <fa-icon [icon]="faAddressCard" style="font-size:3em"></fa-icon>
+        </div>
+      </div>
+      <div class="p-grid">
+        <div class="p-col">
+          <fa-icon [icon]="faHeartBeat" style="font-size:3em"></fa-icon>
+        </div>
+        <div class="p-col">
+          <fa-icon [icon]="faDollarSign" style="font-size:3em"></fa-icon>
+        </div>
+      </div>
+    </p-overlayPanel>
+    <button type="text" pButton (click)="op.toggle($event)" icon="pi pi-fw pi-th-large" class="ui-button-secondary"></button>
+  </div>
+  <div class="p-col-1" >
+    <p-overlayPanel #op2>
+      <div class="p-grid">
+        <div class="p-col-3">
+          <fa-icon [icon]="faUser" style="font-size:3em" class="ui-button-secondary"></fa-icon>
+        </div>
+        <div class="p-col">
+          Marlon Rabago<br />
+          ID 123456789
+        </div>
+      </div>
+      <hr />
+      <div class="p-grid">
+        <div class="p-col">
+          Rewards<br />
+          Account settings<br />
+          LogOut<br />
+        </div>
+      </div>
+    </p-overlayPanel>
+    <button type="text" pButton (click)="op2.toggle($event)" class="ui-button-secondary" icon="pi pi-fw pi-user">
+    </button>
+  </div>
+</div>
